@@ -1,0 +1,107 @@
+@import '../settings/settings-colors.scss';
+
+.footer {
+    background-color: $grey-700;
+    border-top: 12px solid $grey-500;
+    color: white;
+    
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 64px 0 64px 298px;
+        max-height: 312px;
+        position: relative;
+
+        &::before {
+            content: url('../../assets/footer-big-icon.svg');
+            width: 220px;
+            height: 403px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0; left: 0;
+        }
+
+        h6 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+    }
+
+    .footer__list {
+        max-height: 148px;
+    
+        li {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey-200;
+
+            &:hover {
+                color: $primary-300;
+            }
+        }
+    }
+
+    .long-menu {
+        width: 250px; 
+    }
+
+    .footer__list--long {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        max-height: 164px;
+    }
+    
+    .footer__social-links {
+        display: flex;
+        margin-bottom: 48px;
+        padding-top: 5px;
+
+        li {
+            margin-right: 30px;
+        }
+
+        img:hover {
+            color: $primary-300; 
+        }
+    }
+
+    .footer__social-link {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background-size: contain;
+
+        &--facebook {
+            background-image: url(../../assets/facebook.svg);
+    
+            &:hover {
+                background-image: url(../../assets/facebook-green.svg);
+            }
+        }
+
+        &--instagram {
+            background-image: url(../../assets/instagram.svg);
+
+            &:hover {
+                background-image: url(../../assets/instagram-green.svg);
+            }
+        }
+    }
+
+    .footer__copyright {
+        p {
+            line-height: 19px;
+            color: $grey-500;
+        }
+    }
+}

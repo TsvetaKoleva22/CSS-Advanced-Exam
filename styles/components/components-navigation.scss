@@ -1,0 +1,40 @@
+@import '../settings/settings-colors.scss';
+@import '../settings/settings-box-shadows.scss';
+
+.navbar-wrapper {
+    @include box-shadow(2);
+    
+    position: relative;
+    z-index: 2;
+
+    .navbar__logo__arrow {
+        margin-right: 16px;
+    }
+
+    .navbar__items {
+        margin-right: 8px;
+    }
+    
+    .navbar__item {
+        padding: 29px 12px;
+        cursor: pointer;
+        margin-right: 24px;
+
+        a {
+            text-transform: uppercase;
+            color: $grey-700;
+
+            &:hover {
+                color: $secondary-800;
+            }
+        }
+    }
+    
+    .navbar__btns {
+        img {
+            margin-right: 32px;
+            cursor: pointer;
+        }
+
+    }
+}

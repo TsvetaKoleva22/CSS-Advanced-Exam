@@ -1,0 +1,43 @@
+@import '../settings/settings-colors.scss';
+
+.select-wrapper {
+    position: relative;
+    &:after {
+        content: '';
+        background-image: url('../../assets/select-down-arrow.svg');
+        width: 12px;
+        height: 8px;
+        display: block;
+        position: absolute;
+        top: 19px;
+        right: 18px;
+    }
+}
+
+select {
+    min-width: 167px;
+    height: 44px;
+    background: $grey-50;
+    border: 1px solid $secondary-800;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 18px;
+    color: $grey-500;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    //change arrow
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+
+    option {
+        color: $grey-500;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

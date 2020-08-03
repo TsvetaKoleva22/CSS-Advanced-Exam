@@ -1,0 +1,36 @@
+@import '../settings/settings-colors.scss';
+@import '../settings/settings-box-shadows.scss';
+
+.btn {
+    @include box-shadow(4);
+
+    border: none;
+    border-radius: 100px;
+    padding: 10px 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+
+    &:hover {
+        @include box-shadow(1);
+    }
+
+    &--primary {
+        background-color: $secondary-800;
+        color: white;
+    }
+
+    &--secondary {
+        background-color: $primary-400;
+        color: white;
+    }
+
+    &--big {
+        padding: 14px 32px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

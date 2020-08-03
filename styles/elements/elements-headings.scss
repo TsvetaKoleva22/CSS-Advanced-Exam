@@ -1,0 +1,36 @@
+$heading-sizes: (h1: 36px, h2: 32px, h3: 28px, h4: 24px, h5: 20px, h6: 18px);
+
+@each $heading, $size in $heading-sizes {
+    #{$heading} {
+        font-size: $size;
+    }
+}
+
+$heading-line-heights: (h1: 44px, h2: 38px, h3: 34px, h4: 30px, h5: 24px, h6: 22px);
+
+@each $heading, $line-height in $heading-line-heights {
+    #{$heading} {
+        line-height: $line-height;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+h6 {
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+@import '../settings/settings-colors.scss';
+@import '../settings/settings-box-shadows.scss';
+
+
+.welcome-wrapper {
+    background-color: $blue-400;
+    color: white;
+
+    .welcome {
+        padding: 64px 330px 104px;
+
+        &__label {
+            @include box-shadow(1);
+
+            color: white;
+            background-color: $secondary-500;
+            width: fit-content;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 14px;       
+            padding: 4px 8px;
+            margin-bottom: 24px;
+            border-radius: 4px;
+        }
+    }
+}

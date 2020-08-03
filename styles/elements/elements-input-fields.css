@@ -1,0 +1,42 @@
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper:after {
+  content: '';
+  background-image: url("../../assets/select-down-arrow.svg");
+  width: 12px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: 19px;
+  right: 18px;
+}
+
+select {
+  min-width: 167px;
+  height: 44px;
+  background: #F8F8F8;
+  border: 1px solid #FF9100;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 18px;
+  color: #919191;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+select option {
+  color: #919191;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}

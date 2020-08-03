@@ -1,0 +1,61 @@
+
+@import '../settings/settings-colors.scss';
+
+.programs-wrapper {
+    padding-top: 96px;
+    padding-bottom: 116px;
+
+    .programs__intro {
+        padding: 0 220px 64px; //295px-75px on each side
+    
+        h1 {
+            color: $primary-300;
+        }
+
+        p {
+            color: $grey-700;
+            margin-top: 24px;
+        }
+    }
+
+    .program {
+        width: 629px;
+        min-width: 629px;
+        height: 259px;
+        border-radius: 12px;
+        padding: 30px 40px 30px;
+      
+
+        p {
+            color: $grey-700;
+        }
+
+        &--blue {
+            background-color: $blue-50;
+            border: 4px solid $blue-400;
+
+            h4 {
+                color: $blue-400;
+            }
+        }
+
+        &--green {
+            background-color: $primary-50;
+            border: 4px solid $primary-400;
+
+            h4 {
+                color: $primary-400;
+            }
+        }
+    }
+
+    .program__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            margin-left: 28px;
+        }
+    }
+}
