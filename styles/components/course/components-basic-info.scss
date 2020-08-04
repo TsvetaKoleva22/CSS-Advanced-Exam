@@ -1,0 +1,16 @@
+@import '../../settings/settings-colors.scss';
+
+.basic-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+
+    &__suitable-for {
+        padding-right: 88px;
+    }
+
+    &__acquired-skills {
+        padding-left: 85px;
+        border-left: 10px dotted $secondary-100;
+    }
+}

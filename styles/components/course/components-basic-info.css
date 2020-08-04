@@ -1,0 +1,14 @@
+.basic-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.basic-info__suitable-for {
+  padding-right: 88px;
+}
+
+.basic-info__acquired-skills {
+  padding-left: 85px;
+  border-left: 10px dotted #FFECB3;
+}
