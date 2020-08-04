@@ -1,0 +1,22 @@
+.about {
+  padding-top: 152px;
+}
+
+.about__info {
+  max-width: 740px;
+}
+
+.about__video {
+  transform: translateY(-8px);
+  position: relative;
+}
+
+.about__video::before {
+  content: url("../../../assets/play-video.svg");
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}

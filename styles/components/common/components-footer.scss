@@ -1,4 +1,4 @@
-@import '../settings/settings-colors.scss';
+@import '../../settings/settings-colors.scss';
 
 .footer {
     background-color: $grey-700;
@@ -13,7 +13,7 @@
         position: relative;
 
         &::before {
-            content: url('../../assets/footer-big-icon.svg');
+            content: url('../../../assets/footer-big-icon.svg');
             width: 220px;
             height: 403px;
             display: inline-block;
@@ -22,7 +22,7 @@
         }
 
         h6 {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'lato', sans-serif;
             font-weight: 600;
             margin-bottom: 16px;
         }
@@ -82,18 +82,18 @@
         background-size: contain;
 
         &--facebook {
-            background-image: url(../../assets/facebook.svg);
+            background-image: url('../../../assets/facebook.svg');
     
             &:hover {
-                background-image: url(../../assets/facebook-green.svg);
+                background-image: url('../../../assets/facebook-green.svg');
             }
         }
 
         &--instagram {
-            background-image: url(../../assets/instagram.svg);
+            background-image: url('../../../assets/instagram.svg');
 
             &:hover {
-                background-image: url(../../assets/instagram-green.svg);
+                background-image: url('../../../assets/instagram-green.svg');
             }
         }
     }

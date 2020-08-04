@@ -1,5 +1,5 @@
-@import '../settings/settings-colors.scss';
-@import '../settings/settings-box-shadows.scss';
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
 
 .navbar-wrapper {
     @include box-shadow(2);
@@ -16,7 +16,7 @@
     }
     
     .navbar__item {
-        padding: 29px 12px;
+        padding: 28px 12px;
         cursor: pointer;
         margin-right: 24px;
 

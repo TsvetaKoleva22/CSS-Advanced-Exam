@@ -1,5 +1,5 @@
-@import '../settings/settings-colors.scss';
-@import '../settings/settings-box-shadows.scss';
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
 
 .btn {
     @include box-shadow(4);

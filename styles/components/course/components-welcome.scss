@@ -1,10 +1,8 @@
-@import '../settings/settings-colors.scss';
-@import '../settings/settings-box-shadows.scss';
-
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
 
 .welcome-wrapper {
     background-color: $blue-400;
-    color: white;
 
     .welcome {
         padding: 64px 330px 104px;
@@ -23,6 +21,10 @@
             padding: 4px 8px;
             margin-bottom: 24px;
             border-radius: 4px;
+        }
+
+        h1 {
+            color: white;
         }
     }
 }

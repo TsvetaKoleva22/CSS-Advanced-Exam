@@ -1,6 +1,5 @@
 .welcome-wrapper {
   background-color: #44A9F8;
-  color: white;
 }
 
 .welcome-wrapper .welcome {
@@ -20,4 +19,8 @@
   padding: 4px 8px;
   margin-bottom: 24px;
   border-radius: 4px;
+}
+
+.welcome-wrapper .welcome h1 {
+  color: white;
 }

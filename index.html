@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sass Workshop</title>
+    <title>CSS Advanced Exam</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/bui1glo.css">
     
     <link rel="stylesheet" href="./styles/generic/generic-normalize.css">
 
-    <link rel="stylesheet" href="./styles/settings/settings-breakpoints.css">
     <link rel="stylesheet" href="./styles/settings/settings-colors.css">
     <link rel="stylesheet" href="./styles/settings/settings-typography.css">
+    <link rel="stylesheet" href="./styles/settings/settings-breakpoints.css">
+    <link rel="stylesheet" href="./styles/settings/settings-box-shadows.scss">
 
     <link rel="stylesheet" href="./styles/elements/elements-headings.css">
     <link rel="stylesheet" href="./styles/elements/elements-paragraphs.css">
@@ -20,139 +21,198 @@
 
     <link rel="stylesheet" href="./styles/objects/objects-containers.css">
 
-    <link rel="stylesheet" href="./styles/components/components-navigation.css">
-    <link rel="stylesheet" href="./styles/components/components-welcome.css">
-    <link rel="stylesheet" href="./styles/components/components-button.css">
-    <link rel="stylesheet" href="./styles/components/components-card.css">
-    <link rel="stylesheet" href="./styles/components/components-program.css">
-    <link rel="stylesheet" href="./styles/components/components-footer.css">
+    <link rel="stylesheet" href="./styles/components/common/components-navigation.css">
+    <link rel="stylesheet" href="./styles/components/common/components-button.css">
+    <link rel="stylesheet" href="./styles/components/common/components-footer.css">
+    <link rel="stylesheet" href="./styles/components/course/components-course-main.css">
+    <link rel="stylesheet" href="./styles/components/course/components-welcome.css">
+    <link rel="stylesheet" href="./styles/components/course/components-about.css">
+
 
     <link rel="stylesheet" href="./styles/utilities/utilities-centered.css">
+    <link rel="stylesheet" href="./styles/utilities/utilities-bold.css">
     <link rel="stylesheet" href="./styles/utilities/utilities-hidden.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="navbar-wrapper">
-            <nav class="navbar o-site-container o-horizontal-list">
-                <div class="navbar__logo o-horizontal-list">
-                    <img class="navbar__logo__arrow" src="./assets/logo-arrow.svg" alt="logo arrow">
-                    <img src="./assets/logo.svg" alt="logo">
+    <div class="o-page-wrapper">
+        <header class="site-header">
+            <div class="navbar-wrapper">
+                <nav class="navbar o-site-container o-horizontal-list">
+                    <div class="navbar__logo o-horizontal-list">
+                        <img class="navbar__logo__arrow" src="./assets/logo-arrow.svg" alt="logo arrow">
+                        <img src="./assets/logo.svg" alt="logo">
+                    </div>
+                    <div class="o-horizontal-list">
+                        <ul class="navbar__items o-horizontal-list">
+                            <li class="navbar__item">
+                                <a href="/">Обучения</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="/">Събития</a>
+                            </li><li class="navbar__item">
+                                <a href="/">Преподаватели</a>
+                            </li><li class="navbar__item">
+                                <a href="/">Блог</a>
+                            </li><li class="navbar__item">
+                                <a href="/">Контакти</a>
+                            </li>
+                        </ul>
+                        <div class="navbar__btns o-horizontal-list">
+                            <img src="./assets/search.svg" alt="Search">
+                            <button class="btn btn--primary">Вход</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    
+        <main class="course-main">
+            <section class="welcome-wrapper">
+                <div class="welcome o-site-container o-vertical-centered">
+                    <div class="welcome__label">Начинаещ</div>
+                    <h1 class="u-centered">Първи стъпки в програмирането - част 2</h1>
                 </div>
-                <div class="o-horizontal-list">
-                    <ul class="navbar__items o-horizontal-list">
-                        <li class="navbar__item">
-                            <a href="/">Обучения</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="/">Събития</a>
-                        </li><li class="navbar__item">
-                            <a href="/">Преподаватели</a>
-                        </li><li class="navbar__item">
-                            <a href="/">Блог</a>
-                        </li><li class="navbar__item">
-                            <a href="/">Контакти</a>
-                        </li>
-                    </ul>
-                    <div class="navbar__btns o-horizontal-list">
-                        <img src="./assets/search.svg" alt="Search">
-                        <button class="btn btn--primary">Вход</button>
+            </section>
+
+            <section class="about-wrapper">
+                <div class="about o-site-container o-horizontal-list">
+                    <div class="about__info">
+                        <p>
+                            Това е втора част към онлайн обучението „Първи стъпки в програмирането”, който е първият и основополагащ онлайн модул по време на обучението по програмиране на SoftUni Kids. Той е насочен към изграждане на основни компетенции и умения, необходими на децата, за да продължат обучението си в следващи модули от програмата ни за малки програмисти. Първо ниво в направление софтуерни курсове се смята за преминато, след завършване и на двете части от курса и получен сертификат.
+                        </p>
+                        <p>
+                            По време на курса "Първи стъпки в програмирането - част 2", децата получават знания за видовете цикъл, събития, а също така се учат на активно общуване в група и работа в екип – принципи, които са заложени в цялостната програма на обучението по програмиране на SoftUni Kids.
+                        </p>
+                        <p>
+                            Курсът завършва със създаване на сценарии, които са измислени, съставени и програмирани от децата. В последния ден на занятията родителите са добре дошли в последния половин час, за да видят и презентацията на създадената от децата им програма! След завършване на втората част от курса, децата получават и своите сертификати за успешно преминато първо ниво „Първи стъпки в програмирането“.
+                        </p>
+                    </div>
+                    <div class="about__video">
+                        <img src="./assets/video.png" alt="Video">
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </section>
 
-    <main>
-        <section class="welcome-wrapper">
-            <div class="welcome o-site-container o-vertical-centered">
-                <div class="welcome__label">Начинаещ</div>
-                <h1 class="u-centered">Първи стъпки в програмирането - част 2</h1>
-            </div>
-        </section>
-    </main>
+            <section class="basic-info-wrapper">
+                <div class="basic-info o-site-container o-horizontal-list">
+                    <article class="basic-info__suitable-for o-article-with-icon">
+                        <img src="./assets/people.svg" alt="People">
+                        <div>
+                            <h3>За кого е подходящ?</h3>
+                            <p>
+                                Онлайн курсът е подходящ за напълно начинаещи: необходимо е децата да могат да четат и пишат и да имат достъп до компютър с интернет връзка.
+                            </p>
+                        </div>
+                    </article>
 
-    <footer class="footer">
-        <div class="footer__container o-site-container">
-            <div class="long-menu">
-                <h6>Softuni Kids</h6>
-                <ul class="footer__list footer__list--long">
-                    <li>
-                        <a href="/">Начало</a>
-                    </li>
-                    <li>
-                        <a href="/">Летни академии</a>
-                    </li>
-                    <li>
-                        <a href="/">Преподаватели</a>
-                    </li>
-                    <li>
-                        <a href="/">Блог</a>
-                    </li>
-                    <li>
-                        <a href="/">Контакти</a>
-                    </li>
-                    <li>
-                        <a href="/">Общи условия</a>
-                    </li>
-                    <li>
-                        <a href="/">Лични данни</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h6>Всички обучения</h6>
-                <ul class="footer__list">
-                    <li>
-                        <a href="/">Курсове</a>
-                    </li>
-                    <li>
-                        <a href="/">Събития</a>
-                    </li>
-                </ul>
-            </div>
+                    <article class="basic-info__acquired-skills o-article-with-icon">
+                        <img src="./assets/puzzle.svg" alt="Puzzle">
+                        <div>
+                            <h3>Какво ще умее детето след курса?</h3>
+                            <p>
+                                При записване на второ дете (братче/сестриче) получавате <span class="bold">20% отстъпка</span> от таксата за второто дете. 
+                            </p>
+                            <p>
+                                Занятията стартират при сформиране на група.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section>
+                Programm
+            </section>
+            <section>
+                certificate
+            </section>
+            <section>
+                when and where
+            </section>
+        </main>
     
-            <div>
-                <h6>Всички инициативи</h6>
-                <ul class="footer__list">
-                    <li>
-                        <a href="/">Software University</a>
-                    </li>
-                    <li>
-                        <a href="/">SoftUni Digital</a>
-                    </li>
-                    <li>
-                        <a href="/">SoftUni Creative</a>
-                    </li>
-                    <li>
-                        <a href="/">SoftUni Svetlina</a>
-                    </li>
-                    <li>
-                        <a href="/">SoftUni Foundation</a>
-                    </li>
-                </ul>
+        <footer class="footer">
+            <div class="footer__container o-site-container">
+                <div class="long-menu">
+                    <h6>Softuni Kids</h6>
+                    <ul class="footer__list footer__list--long">
+                        <li>
+                            <a href="/">Начало</a>
+                        </li>
+                        <li>
+                            <a href="/">Летни академии</a>
+                        </li>
+                        <li>
+                            <a href="/">Преподаватели</a>
+                        </li>
+                        <li>
+                            <a href="/">Блог</a>
+                        </li>
+                        <li>
+                            <a href="/">Контакти</a>
+                        </li>
+                        <li>
+                            <a href="/">Общи условия</a>
+                        </li>
+                        <li>
+                            <a href="/">Лични данни</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Всички обучения</h6>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="/">Курсове</a>
+                        </li>
+                        <li>
+                            <a href="/">Събития</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h6>Всички инициативи</h6>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="/">Software University</a>
+                        </li>
+                        <li>
+                            <a href="/">SoftUni Digital</a>
+                        </li>
+                        <li>
+                            <a href="/">SoftUni Creative</a>
+                        </li>
+                        <li>
+                            <a href="/">SoftUni Svetlina</a>
+                        </li>
+                        <li>
+                            <a href="/">SoftUni Foundation</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h6>Намери ни</h6>
+                    <ul class="footer__social-links">
+                        <li>
+                            <a class="footer__social-link footer__social-link--facebook" href="/"></a>
+                        </li>
+                        <li>
+                            <a class="footer__social-link footer__social-link--instagram" href="/"></a>
+                        </li>
+                    </ul>
+                    <div class="footer__copyright">
+                        <p>
+                            &copy; 2016-2020 - SoftUni 
+                        </p>
+                        <p>
+                            Kids. All Rights Reserved.
+                        </p>
+                    </div >
+                   
+                </div>
             </div>
-    
-            <div>
-                <h6>Намери ни</h6>
-                <ul class="footer__social-links">
-                    <li>
-                        <a class="footer__social-link footer__social-link--facebook" href="/"></a>
-                    </li>
-                    <li>
-                        <a class="footer__social-link footer__social-link--instagram" href="/"></a>
-                    </li>
-                </ul>
-                <div class="footer__copyright">
-                    <p>
-                        &copy; 2016-2020 - SoftUni 
-                    </p>
-                    <p>
-                        Kids. All Rights Reserved.
-                    </p>
-                </div >
-               
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
