@@ -34,21 +34,25 @@
 
         position: absolute;
         bottom: -55px;
-        width: 1290px;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        max-width: 1290px;
+        width: 100%;
+        min-height: 112px;
         background-color: white;
         border-radius: 12px;
-        display: flex;
+
+        display: grid;
+        grid-template-columns: 302px 1fr; 
 
         &__button-wrapper {
-            padding: 0 64px;
-            border-right: 10px dotted transparent;
+            border-right: 10px dotted $blue-400;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
         }
 
         &__content-list {
-            padding-left: 65px;
-           display: flex;
+            padding-left: 63px;
+            display: flex;
         }
 
         &__content-list-item {
