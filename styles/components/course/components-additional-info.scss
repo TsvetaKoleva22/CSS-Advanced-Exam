@@ -8,11 +8,19 @@
     padding-bottom: 150px;
 
     &__when-and-where {
-        padding-right: 32px;
+        padding-right: 29px;
         border-right: 10px dotted $secondary-100;
     }
 
     &__more-info {
         padding-left: 35px;
+    }
+
+    &__link {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: underline;
+        color: $secondary-800;
     }
 }

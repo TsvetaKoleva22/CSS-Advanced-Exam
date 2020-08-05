@@ -1,5 +1,6 @@
 .welcome-wrapper {
   background-color: #44A9F8;
+  position: relative;
 }
 
 .welcome-wrapper .welcome {
@@ -23,4 +24,55 @@
 
 .welcome-wrapper .welcome h1 {
   color: white;
+}
+
+.welcome-wrapper .enrollment {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -55px;
+  width: 1290px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+}
+
+.welcome-wrapper .enrollment__button-wrapper {
+  padding: 0 64px;
+  border-right: 10px dotted transparent;
+}
+
+.welcome-wrapper .enrollment__content-list {
+  padding-left: 65px;
+  display: flex;
+}
+
+.welcome-wrapper .enrollment__content-list-item {
+  padding-right: 66px;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-wrapper .enrollment__content-list-item .list-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.welcome-wrapper .enrollment__content-list-item .list-info {
+  font-weight: bold;
+}
+
+.welcome-wrapper .enrollment__content-list-item .list-info--title {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 3px;
+}
+
+.welcome-wrapper .enrollment__content-list-item .list-info--value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF9100;
 }

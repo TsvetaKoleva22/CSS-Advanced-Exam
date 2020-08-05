@@ -3,6 +3,7 @@
 
 .welcome-wrapper {
     background-color: $blue-400;
+    position: relative;
 
     .welcome {
         padding: 64px 330px 104px;
@@ -25,6 +26,58 @@
 
         h1 {
             color: white;
+        }
+    }
+
+    .enrollment {
+        @include box-shadow(1);
+
+        position: absolute;
+        bottom: -55px;
+        width: 1290px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+
+        &__button-wrapper {
+            padding: 0 64px;
+            border-right: 10px dotted transparent;
+        }
+
+        &__content-list {
+            padding-left: 65px;
+           display: flex;
+        }
+
+        &__content-list-item {
+            padding-right: 66px;
+            display: flex;
+            align-items: center;
+        
+            .list-info-wrapper {
+                display: flex;
+                flex-direction: column; 
+                margin-left: 24px;
+            }
+
+            .list-info {
+                font-weight: bold;
+
+                &--title {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 3px;
+                }
+
+                &--value {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $secondary-800;
+                }
+            }
         }
     }
 }
