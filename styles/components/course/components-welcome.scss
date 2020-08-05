@@ -56,9 +56,22 @@
         }
 
         &__content-list-item {
-            padding-right: 66px;
+            padding-right: 68px;
             display: flex;
             align-items: center;
+            position: relative;
+
+            &:not(:last-child)::after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 32px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $grey-100;
+                width: 2px;
+                height: 24px;
+            }
         
             .list-info-wrapper {
                 display: flex;

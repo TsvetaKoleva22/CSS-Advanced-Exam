@@ -52,9 +52,22 @@
 }
 
 .welcome-wrapper .enrollment__content-list-item {
-  padding-right: 66px;
+  padding-right: 68px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.welcome-wrapper .enrollment__content-list-item:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #F1F1F1;
+  width: 2px;
+  height: 24px;
 }
 
 .welcome-wrapper .enrollment__content-list-item .list-info-wrapper {
