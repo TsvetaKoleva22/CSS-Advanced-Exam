@@ -1,0 +1,41 @@
+.leaders {
+  height: 100%;
+  padding-top: 96px;
+  border-bottom: 10px dotted #DFF4F1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.leaders__person {
+  align-self: start;
+  display: flex;
+}
+
+.leaders__person--right {
+  padding-left: 15px;
+}
+
+.leaders__person img {
+  max-width: 188px;
+  max-height: 188px;
+}
+
+.leaders__info {
+  margin-left: 37px;
+}
+
+.leaders__info h5 {
+  color: #41BEAD;
+  margin-bottom: 8px;
+}
+
+.leaders__info span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #B2B2B2;
+}
+
+.leaders__info p {
+  margin-top: 24px;
+}

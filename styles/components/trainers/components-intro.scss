@@ -1,0 +1,22 @@
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
+
+.intro-wrapper {
+    background-color: $secondary-600;
+
+    .intro {
+        height: 100%;
+        justify-content: center;
+
+        h2 {
+            color: white;
+        }
+
+        &__content {
+            max-width: 850px;
+            color: white;
+            margin-top: 24px;
+            margin-bottom: 0;
+        }
+    }
+}

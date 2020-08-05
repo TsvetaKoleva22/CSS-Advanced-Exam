@@ -1,0 +1,4 @@
+.trainers-main {
+  display: grid;
+  grid-template-rows: 256px 556px 1472px 412px;
+}

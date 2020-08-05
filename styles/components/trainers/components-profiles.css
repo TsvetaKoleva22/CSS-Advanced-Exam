@@ -1,0 +1,25 @@
+.profiles {
+  height: 100%;
+  padding: 96px 94px 65px 104px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.profiles__profile img {
+  max-width: 188px;
+  max-height: 188px;
+}
+
+.profiles__profile h5 {
+  color: #41BEAD;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.profiles__profile span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #B2B2B2;
+}

@@ -1,0 +1,50 @@
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
+
+.apply-wrapper {
+    border-top: 12px solid $blue-200;
+    background-color: $blue-300;
+
+    .apply {
+        height: 100%;
+        padding-top: 64px;   
+        padding-left: 170px;
+        padding-right: 170px;
+        color: white;
+
+        &__title {
+            color: white;
+        }
+
+        &__info {
+            color: white;
+            max-width: 850px;
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 48px;
+        }
+
+        &__form {
+            align-self: stretch;
+        }
+
+        &__form-input {
+            width: 228px;
+            border: 1px solid white;
+            border-radius: 6px;
+            color: white;
+            padding: 16px;
+            background-color: $blue-300;
+            margin-right: 29px;
+
+            &::placeholder {
+                color: white;
+                font-size: 16px;
+            }
+
+            &--last {
+                margin-right: 44px;
+            }
+        }
+    }
+}
