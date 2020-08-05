@@ -2,8 +2,6 @@
 @import '../../settings/settings-box-shadows.scss';
 
 .btn {
-    @include box-shadow(4);
-
     border: none;
     border-radius: 100px;
     padding: 10px 22px;
@@ -14,18 +12,21 @@
     line-height: 16px;
     cursor: pointer;
 
-    &:hover {
-        @include box-shadow(1);
-    }
-
     &--primary {
+        @include box-shadow(4);
+
         background-color: $secondary-800;
         color: white;
+
+        &:hover {
+            @include box-shadow(1);
+        }
     }
 
     &--secondary {
-        background-color: $primary-400;
-        color: white;
+        background-color: white;
+        color: $secondary-800;
+        border: 1px solid $secondary-800;
     }
 
     &--big {

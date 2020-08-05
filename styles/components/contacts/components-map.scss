@@ -1,0 +1,25 @@
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
+
+.map-wrapper {
+    background-image: url('../../../assets/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .map {
+        position: relative;
+
+        &__info {
+            @include box-shadow(1);
+
+            position: absolute;
+            top: 128px;
+            left: 0;
+            width: 519px;
+            height: 385px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 32px;
+        }
+    }
+}
