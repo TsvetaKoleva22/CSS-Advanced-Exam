@@ -1,0 +1,39 @@
+.contact-form {
+  height: 100%;
+  padding-top: 180px;
+}
+
+.contact-form form {
+  width: 850px;
+}
+
+.contact-form__title {
+  color: #41BEAD;
+  margin-bottom: 32px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 32px;
+  padding: 16px;
+  border: 1px solid #919191;
+  border-radius: 6px;
+}
+
+.contact-form textarea::placeholder {
+  font-size: 16px;
+  color: #919191;
+}
+
+.contact-form input {
+  width: 409px;
+  padding: 16px;
+  border: 1px solid #919191;
+  border-radius: 6px;
+}
+
+.contact-form input::placeholder {
+  font-size: 16px;
+  color: #919191;
+}

@@ -16,12 +16,6 @@
   align-items: center;
 }
 
-@media (max-width: 599px) {
-  .o-horizontal-list {
-    flex-direction: column;
-  }
-}
-
 .o-vertical-centered {
   display: flex;
   flex-direction: column;
