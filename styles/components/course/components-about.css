@@ -1,12 +1,16 @@
-.about {
+.about-wrapper {
   padding-top: 152px;
+  padding-bottom: 96px;
 }
 
-.about__info {
-  max-width: 740px;
+.about {
+  display: grid;
+  grid-template-columns: 1fr 550px;
 }
 
 .about__video {
+  align-self: center;
+  justify-self: end;
   transform: translateY(-8px);
   position: relative;
 }

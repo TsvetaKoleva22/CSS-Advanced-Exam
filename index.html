@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="./styles/components/course/components-welcome.css">
     <link rel="stylesheet" href="./styles/components/course/components-about.css">
     <link rel="stylesheet" href="./styles/components/course/components-basic-info.css">
+    <link rel="stylesheet" href="./styles/components/course/components-schedule.css">
+    <link rel="stylesheet" href="./styles/components/course/components-certificate.css">
+    <link rel="stylesheet" href="./styles/components/course/components-additional-info.css">
 
     <link rel="stylesheet" href="./styles/utilities/utilities-centered.css">
     <link rel="stylesheet" href="./styles/utilities/utilities-bold.css">
@@ -75,7 +78,7 @@
             </section>
 
             <section class="about-wrapper">
-                <div class="about o-site-container o-horizontal-list">
+                <div class="about o-site-container">
                     <div class="about__info">
                         <p>
                             Това е втора част към онлайн обучението „Първи стъпки в програмирането”, който е първият и основополагащ онлайн модул по време на обучението по програмиране на SoftUni Kids. Той е насочен към изграждане на основни компетенции и умения, необходими на децата, за да продължат обучението си в следващи модули от програмата ни за малки програмисти. Първо ниво в направление софтуерни курсове се смята за преминато, след завършване и на двете части от курса и получен сертификат.
@@ -94,7 +97,7 @@
             </section>
 
             <section class="basic-info-wrapper">
-                <div class="basic-info o-site-container o-horizontal-list">
+                <div class="basic-info o-site-container">
                     <article class="basic-info__suitable-for o-article-with-icon">
                         <img src="./assets/people.svg" alt="People">
                         <div>
@@ -119,14 +122,115 @@
                     </article>
                 </div>
             </section>
-            <section>
-                Programm
+
+            <section class="schedule-wrapper">
+                <div class="shedule-wrapper-inner">
+                    <div class="schedule o-site-container">
+                        <article class="schedule__info o-article-with-icon">
+                            <img src="./assets/book.svg" alt="Book">
+                            <div>
+                                <h3 class="schedule__title">Програма на обучението</h3>
+                                <p>
+                                    През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще имат възможност да ни задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще се забавляваме докато учим как да прогамираме.
+                                </p>
+                                <h6 class="schedule__subtitle">занятия</h6>
+                                <div class="select-wrapper schedule__select">
+                                    <select name="loops-select" id="loops-select">
+                                        <option value="loops">1. Цикли и безкрайни цикли</option>
+                                        <option value="for-loops">For-цикли</option>
+                                        <option value="while-loops">While-цикли</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper schedule__select">
+                                    <select name="events-select" id="events-select">
+                                        <option value="events">2. Събития</option>
+                                        <option value="lectures">Лекции</option>
+                                        <option value="exercises">Упражнения</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper schedule__select">
+                                    <select name="presentation-select" id="presentations-select">
+                                        <option value="presentations">3. Презентационни умения. Създаване на цялостен сценарий в Scratch.</option>
+                                        <option value="presentation-skills">Добри презентационни умения</option>
+                                        <option value="presentation-project">Цялостен проект</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper schedule__select">
+                                    <select name="project-select" id="project-select">
+                                        <option value="project">4. Работа по финален проект и презентирането му.</option>
+                                        <option value="project-consultation">Консултации по проекта</option>
+                                        <option value="project-defense">Защита на проекта</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="schedule__image">
+                            <img src="./assets/laptop-certificate.svg" alt="Laptop">
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section>
-                certificate
+
+            <section class="certificate-wrapper">
+                <div class="certificate o-site-container">
+                    <div class="certificate__info-wrapper">
+                        <article class="certificate__info o-article-with-icon">
+                            <img src="./assets/reward.svg" alt="Certificte">
+                            <div>
+                                <h3>Сертификат</h3>
+                                <p>
+                                    Да се опише максимално подробно <span class="bold">кога</span> и <span class="bold">къде</span> се провеждат занятията. За примера съм изпозлвал описание от онлайн курс
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="certificate__image-wrapper">
+                        <div class="certificate__image">Снимка на сертификата</div>
+                    </div>
+                </div>
             </section>
-            <section>
-                when and where
+
+            <section class="additional-info-wrapper">
+                <div class="additional-info o-site-container">
+                    <article class="additional-info__when-and-where o-article-with-icon">
+                        <img src="./assets/clock.svg" alt="When and where">
+                        <div>
+                            <h3>Кога и къде се провеждат занятията?</h3>
+                            <p>
+                                Да се опише максимално подробно <span class="bold">кога</span> и <span class="bold">къде</span> се провеждат занятията. За примера съм изпозлвал описание от онлайн курс. 
+                            </p>
+                            <p>
+                                Курсът е в <span class="bold">ОНЛАЙН ФОРМАТ</span>. Обучението се провежда в рамките на <span class="bold">2 астрономически часa</span>, веднъж седмично в продължение на <span class="bold">4 седмици</span>.
+                            </p>
+                            <p>
+                                Денят и часа зависят от групата, в която запишете детето си. Занятията ще се проведат в онлайн платформа, за която ще получите линк преди занятието, с който да достъпите виртуалната ни класна стая.
+                            </p>
+                            <p class="bold">
+                                Крайният срок за записване е 05/06/2020, 23:59 часа включително.
+                            </p>
+                        </div>
+                    </article>
+    
+                    <article class="additional-info__more-info o-article-with-icon">
+                        <img src="./assets/innovation.svg" alt="Certificte">
+                        <div>
+                            <h3>Допълнителна информация</h3>
+                            <p>
+                                В деня на първото занятие на вашето дете ще имаме нужда от <span class="bold">два подписани и попълнени екземпляра на договор</span> за обучение в SoftUni Kids. Ще получите договора на имейл адреса ви, след заплащането на обучението. Може да го разгледате от тук.   
+                            </p>
+                            <p>
+                                За успешното провеждане на занятията трябва да осигурите на детето си <span class="bold">компютър, интернет връзка и спокойна среда за работа</span>. За по-лесна комуникация ще получите достъп до група в социалните мрежи, където преподавателите ще помагат на децата при затруднения в достъпа до виртуалната ни класна стая.
+                            </p>
+                            <p>
+                                Почивен ден за групите - няма.
+                            </p>
+                            <p class="bold">
+                                Запазването на място става единствено след успешно заплащане.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
     

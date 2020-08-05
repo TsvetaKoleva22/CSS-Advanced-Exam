@@ -1,0 +1,18 @@
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
+
+.additional-info {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 150px;
+
+    &__when-and-where {
+        padding-right: 32px;
+        border-right: 10px dotted $secondary-100;
+    }
+
+    &__more-info {
+        padding-left: 35px;
+    }
+}

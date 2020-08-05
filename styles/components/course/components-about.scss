@@ -1,13 +1,17 @@
 @import '../../settings/settings-colors.scss';
 
-.about {
+.about-wrapper {
     padding-top: 152px; 
+    padding-bottom: 96px;
+}
 
-    &__info {
-        max-width: 740px;
-    }
+.about {
+    display: grid;
+    grid-template-columns: 1fr 550px;
 
     &__video {
+        align-self: center;
+        justify-self: end;
         transform: translateY(-8px);
         position: relative;
         

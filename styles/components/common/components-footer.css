@@ -26,6 +26,7 @@
   font-family: 'lato', sans-serif;
   font-weight: 600;
   margin-bottom: 16px;
+  color: white;
 }
 
 .footer .footer__list {
@@ -99,4 +100,5 @@
 .footer .footer__copyright p {
   line-height: 19px;
   color: #919191;
+  margin-bottom: 0;
 }
