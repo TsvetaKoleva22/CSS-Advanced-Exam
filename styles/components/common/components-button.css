@@ -23,7 +23,10 @@
 .btn--secondary {
   background-color: white;
   color: #FF9100;
+  font-weight: 800;
   border: 1px solid #FF9100;
+  padding: 13px 34px;
+  letter-spacing: 0.6px;
 }
 
 .btn--big {

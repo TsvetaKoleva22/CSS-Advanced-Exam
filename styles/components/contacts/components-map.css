@@ -14,8 +14,46 @@
   top: 128px;
   left: 0;
   width: 519px;
-  height: 385px;
+  height: 383px;
   background-color: white;
   border-radius: 12px;
   padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 43px;
+  grid-column-gap: 28px;
+  grid-row-gap: 14px;
+}
+
+.map-wrapper .map__info-field--address {
+  padding-right: 6px;
+}
+
+.map-wrapper .map__info-field--work-hours .work-hours-wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 9px;
+  grid-row-gap: 18px;
+}
+
+.map-wrapper .map__info-field--work-hours .hours {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FF9100;
+}
+
+.map-wrapper .map__info-field--contacts p {
+  margin-bottom: 12px;
+}
+
+.map-wrapper .map__info-title {
+  color: #41BEAD;
+  margin-bottom: 18px;
+}
+
+.map-wrapper .map__info-btn {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+  justify-self: center;
 }

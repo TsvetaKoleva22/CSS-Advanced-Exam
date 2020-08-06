@@ -26,7 +26,10 @@
     &--secondary {
         background-color: white;
         color: $secondary-800;
+        font-weight: 800;
         border: 1px solid $secondary-800;
+        padding: 13px 34px;
+        letter-spacing: 0.6px;
     }
 
     &--big {
