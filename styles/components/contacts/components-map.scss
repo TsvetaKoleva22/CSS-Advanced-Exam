@@ -20,12 +20,19 @@
             background-color: white;
             border-radius: 12px;
             padding: 32px;
+            cursor: pointer;
 
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 43px;
             grid-column-gap: 28px;
             grid-row-gap: 14px;
+
+            transition: transform 0.5s ease-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
 
         &__info-field--address {

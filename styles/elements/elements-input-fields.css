@@ -1,3 +1,16 @@
+textarea, input, .select-wrapper select {
+  border-radius: 6px;
+  font-style: normal;
+}
+
+textarea, input {
+  padding: 16px;
+}
+
+textarea::placeholder, input::placeholder {
+  font-size: 16px;
+}
+
 .select-wrapper {
   position: relative;
 }
@@ -18,10 +31,8 @@
   height: 50px;
   background-color: white;
   border: none;
-  border-radius: 6px;
   padding: 14px 60px 14px 14px;
   color: #565656;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -41,25 +52,8 @@
   line-height: 22px;
 }
 
-input {
-  padding: 16px;
-  border-radius: 6px;
-}
-
-input::placeholder {
-  font-size: 16px;
-  color: #919191;
-}
-
 textarea {
   width: 100%;
-  padding: 16px;
   border: 1px solid #919191;
-  border-radius: 6px;
   resize: none;
-}
-
-textarea::placeholder {
-  font-size: 16px;
-  color: #919191;
 }

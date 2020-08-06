@@ -20,6 +20,12 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  transform-origin: bottom;
+  transition: transform 0.5s ease-out;
+}
+
+.footer .footer__container:hover::before {
+  transform: scale(1.06);
 }
 
 .footer .footer__container h6 {

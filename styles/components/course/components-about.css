@@ -13,6 +13,8 @@
   justify-self: end;
   transform: translateY(-8px);
   position: relative;
+  cursor: pointer;
+  transition: transform 0.4s ease-out;
 }
 
 .about__video::before {
@@ -23,4 +25,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+.about__video:hover {
+  transform: scale(1.05);
 }

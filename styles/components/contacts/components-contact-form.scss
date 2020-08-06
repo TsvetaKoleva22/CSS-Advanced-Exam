@@ -27,5 +27,9 @@
         max-height: 192px;
         margin-top: 30px;
         margin-bottom: 30px;
+
+        &::placeholder {
+            color: $grey-500;
+        }
     }
 }

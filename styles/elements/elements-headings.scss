@@ -14,31 +14,41 @@ $heading-line-heights: (h1: 48px, h2: 44px, h3: 36px, h4: 30px, h5: 24px, h6: 22
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+%common-font-styles {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
 }
 
-h1 {
+%common-font-weight {
     font-weight: 600;
+}
+
+h1 {
+    @extend %common-font-styles;
+    @extend %common-font-weight;
 }
 
 h2 {
-    font-weight: 600;
+    @extend %common-font-styles;
+    @extend %common-font-weight;
 }
 
 h3 {
-    font-weight: bold;
+    @extend %common-font-styles;
+    @extend %common-font-weight;
 }
 
 h4 {
+    @extend %common-font-styles;
     font-weight: bold;
 }
 
 h5 {
-    font-weight: 600;
+    @extend %common-font-styles;
+    @extend %common-font-weight;
 }
 
 h6 {
+    @extend %common-font-styles;
     font-weight: bold;
 }
