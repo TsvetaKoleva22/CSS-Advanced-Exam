@@ -31,15 +31,12 @@
         &__form-input {
             width: 228px;
             border: 1px solid white;
-            border-radius: 6px;
             color: white;
-            padding: 16px;
             background-color: $blue-300;
             margin-right: 29px;
 
             &::placeholder {
                 color: white;
-                font-size: 16px;
             }
 
             &--last {

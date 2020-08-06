@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./styles/components/contacts/components-contacts-main.css">
     <link rel="stylesheet" href="./styles/components/contacts/components-map.css">
     <link rel="stylesheet" href="./styles/components/contacts/components-contact-form.css">
-
+    <link rel="stylesheet" href="./styles/components/contacts/components-getting-there.css">
 
     <link rel="stylesheet" href="./styles/utilities/utilities-centered.css">
     <link rel="stylesheet" href="./styles/utilities/utilities-bold.css">
@@ -95,14 +95,37 @@
             <section class="contact-form-wrapper">
                 <div class="contact-form o-site-container o-vertical-centered">
                     <h3 class="contact-form__title">Пишете ни</h3>
-                    <form>
+                    <form class="contact-form__form">
                         <div class="o-horizontal-list">
-                            <input type="text" placeholder="Заглавие">
-                            <input type="text" placeholder="Имейл адрес">
+                            <input class="contact-form__input" type="text" placeholder="Заглавие">
+                            <input class="contact-form__input" type="text" placeholder="Имейл адрес">
                         </div>
-                        <textarea placeholder="Съобщение" name="" id="" cols="30" rows="10"></textarea>
-                        <button class="btn btn--primary">изпрати</button>
+                        <textarea class="contact-form__textarea" placeholder="Съобщение" name="message" id="message" cols="30" rows="9"></textarea>
+                        <button class="btn btn--primary btn--big">изпрати</button>
                     </form>
+                </div>
+            </section>
+
+            <section class="getting-there-wrapper">
+                <div class="getting-there o-site-container">
+                    <h3 class="getting-there__title getting-there__title--main">Как да стигна до SoftUni?</h3>
+                    <article class="getting-there__article">
+                        <h4 class="getting-there__title getting-there__title--secondary">Метро</h4>
+                        <p>Метростанция <span class="u-bold">Жолио Кюри</span> - на 5-10 минути от СофтУни</p>
+                        <p>Метростанция <span class="u-bold">Г. М. Димитров</span> - на 5-10 минути от СофтУни</p>
+                    </article>
+                    <article class="getting-there__article">
+                        <h4 class="getting-there__title getting-there__title--secondary">Автобуси</h4>
+                        <p><span class="u-bold">67, 413</span> - Спирка “СТЦ Интерпред” (1112) или спирка “ж.к. Дианабад” (0627) (на бул. Драган Цанков)</p>
+                        <p><span class="u-bold">88, 94, 102</span> - Спирка “ПК Диана” (1342) (на 10-ина минути от СофтУни)</p>
+                        <p><span class="u-bold">88, 280, 294</span> - Спирка “СБАЛ по онкология” (0764) (на кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)</p>
+                        <p><span class="u-bold">123, 69, 70, 88, 67, 413</span> - Спирка “СБАЛ по онкология” (2542) (на кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)</p>
+                    </article>
+                    <article class="getting-there__article">
+                        <h4 class="getting-there__title getting-there__title--secondary">Маршрутки</h4>
+                        <p><span class="u-bold">5</span> - минава през метростанцията на бул Г. М. Димитров</p>
+                        <p><span class="u-bold">27</span> - минава през метростанцията на бул Г. М. Димитров</p>
+                    </article>
                 </div>
             </section>
         </main>

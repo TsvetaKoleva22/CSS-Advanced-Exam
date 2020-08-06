@@ -42,3 +42,25 @@
         }
     }
 }
+
+input {
+    padding: 16px;
+    border-radius: 6px;
+
+    &::placeholder {
+        font-size: 16px;
+    }
+}
+
+textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid $grey-500;
+    border-radius: 6px;
+    resize: none;
+
+    &::placeholder {
+        font-size: 16px;
+        color: $grey-500;
+    }
+}

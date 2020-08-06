@@ -3,40 +3,29 @@
 
 .contact-form {
     height: 100%;
-    padding-top: 170px;
-
-    form {
-        width: 850px;
-    }
+    padding-top: 174px;
 
     &__title {
         color: $primary-300;
-        margin-bottom: 32px;
+        margin-bottom: 25px;
     }
 
-    textarea {
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 32px;
-        padding: 16px;
-        border: 1px solid $grey-500;
-        border-radius: 6px;
-
-        &::placeholder {
-            font-size: 16px;
-            color: $grey-500;
-        }
+    &__form {
+        width: 850px;
     }
 
-    input {
+    &__input {
         width: 409px;
-        padding: 16px;
         border: 1px solid $grey-500;
-        border-radius: 6px;
 
         &::placeholder {
-            font-size: 16px;
             color: $grey-500;
         }
+    }
+
+    &__textarea {
+        max-height: 192px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }

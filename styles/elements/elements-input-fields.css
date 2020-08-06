@@ -40,3 +40,26 @@
   font-size: 18px;
   line-height: 22px;
 }
+
+input {
+  padding: 16px;
+  border-radius: 6px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #919191;
+}
+
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #919191;
+  border-radius: 6px;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-size: 16px;
+  color: #919191;
+}

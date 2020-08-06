@@ -1,0 +1,33 @@
+@import '../../settings/settings-colors.scss';
+@import '../../settings/settings-box-shadows.scss';
+
+.getting-there-wrapper {
+    background-color: $secondary-50;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    .getting-there {
+        height: 100%;    
+        display: grid;
+        grid-template-rows: 84px 1fr;
+        grid-template-columns: 407px 407px 407px;
+        grid-column-gap: 33px; 
+
+        &__title {
+            color: $primary-300;
+
+            &--main {
+                grid-column: 1 / 4;
+                justify-self: center;
+            }
+
+            &--secondary {
+                margin-bottom: 18px;
+            }
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+    }
+}

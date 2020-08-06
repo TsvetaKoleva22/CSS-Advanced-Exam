@@ -1,0 +1,30 @@
+.getting-there-wrapper {
+  background-color: #FFF8E1;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.getting-there-wrapper .getting-there {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 84px 1fr;
+  grid-template-columns: 407px 407px 407px;
+  grid-column-gap: 33px;
+}
+
+.getting-there-wrapper .getting-there__title {
+  color: #41BEAD;
+}
+
+.getting-there-wrapper .getting-there__title--main {
+  grid-column: 1 / 4;
+  justify-self: center;
+}
+
+.getting-there-wrapper .getting-there__title--secondary {
+  margin-bottom: 18px;
+}
+
+.getting-there-wrapper .getting-there p {
+  margin-bottom: 16px;
+}
