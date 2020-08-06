@@ -4,7 +4,7 @@
   color: white;
 }
 
-.footer .footer__container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   padding: 64px 0 64px 298px;
@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.footer .footer__container::before {
+.footer__container::before {
   content: url("../../../assets/footer-big-icon.svg");
   width: 220px;
   height: 403px;
@@ -24,34 +24,35 @@
   transition: transform 0.5s ease-out;
 }
 
-.footer .footer__container:hover::before {
+.footer__container:hover::before {
   transform: scale(1.06);
 }
 
-.footer .footer__container h6 {
+.footer__container h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   margin-bottom: 16px;
   color: white;
 }
 
-.footer .footer__list {
+.footer__list {
   max-height: 148px;
 }
 
-.footer .footer__list li:not(:last-child) {
+.footer__list li:not(:last-child) {
   margin-bottom: 12px;
 }
 
-.footer .footer__list a {
+.footer__list a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #E6E6E6;
+  transition: color 0.3s ease-out;
 }
 
-.footer .footer__list a:hover {
+.footer__list a:hover {
   color: #41BEAD;
 }
 
@@ -59,51 +60,49 @@
   width: 250px;
 }
 
-.footer .footer__list--long {
+.footer__list--long {
   display: flex;
   flex-flow: column wrap;
   align-content: space-between;
   max-height: 164px;
 }
 
-.footer .footer__social-links {
+.footer__social-links {
   display: flex;
   margin-bottom: 48px;
   padding-top: 5px;
 }
 
-.footer .footer__social-links li {
+.footer__social-links li {
   margin-right: 30px;
 }
 
-.footer .footer__social-links img:hover {
-  color: #41BEAD;
-}
-
-.footer .footer__social-link {
+.footer__social-link {
   display: inline-block;
   width: 28px;
   height: 28px;
   background-size: contain;
 }
 
-.footer .footer__social-link--facebook {
+.footer__social-link--facebook {
   background-image: url("../../../assets/facebook.svg");
+  transition: background-image 0.3s ease-out;
 }
 
-.footer .footer__social-link--facebook:hover {
+.footer__social-link--facebook:hover {
   background-image: url("../../../assets/facebook-green.svg");
 }
 
-.footer .footer__social-link--instagram {
+.footer__social-link--instagram {
   background-image: url("../../../assets/instagram.svg");
+  transition: background-image 0.3s ease-out;
 }
 
-.footer .footer__social-link--instagram:hover {
+.footer__social-link--instagram:hover {
   background-image: url("../../../assets/instagram-green.svg");
 }
 
-.footer .footer__copyright p {
+.footer__copyright p {
   line-height: 19px;
   color: #919191;
   margin-bottom: 0;

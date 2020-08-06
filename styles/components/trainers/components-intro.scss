@@ -1,5 +1,6 @@
 @import '../../settings/settings-colors.scss';
 @import '../../settings/settings-box-shadows.scss';
+@import '../../settings/settings-animations.scss';
 
 .intro-wrapper {
     background-color: $secondary-600;
@@ -17,6 +18,11 @@
             color: white;
             margin-top: 24px;
             margin-bottom: 0;
+
+            opacity: 0;
+            animation-name: text-fade-in;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
         }
     }
 }
