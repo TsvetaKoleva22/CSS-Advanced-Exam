@@ -9,20 +9,56 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    &__profile {
+    .profile {
+        position: relative;
         
-        img {
-            max-width: 188px;
-            max-height: 188px;
+        &__image-wrapper {
+            width: 188px;
+            height: 188px;
+            cursor: pointer;
         }
 
-        h5 {
+        &__overlay {
+            display: none;
+            background-color: $secondary-800;
+            opacity: 0.8;
+            width: 172px;
+            height: 172px;
+            border-radius: 50%;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 8px;
+            left: 50px;
+            cursor: pointer;
+    
+            span {
+                color: white;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 12px;
+                text-transform: uppercase;
+                margin-top: 12px;
+            }
+    
+            &:hover {
+                display: flex;
+            }
+        }
+
+        .profile__image-wrapper:hover + .profile__overlay {
+            display: flex; 
+        }
+
+        &__name {
             color: $primary-300;
             margin-bottom: 8px;
             margin-top: 24px;
         }
 
-        span {
+        &__position {
             font-size: 14px;
             font-weight: 500;
             line-height: 16px;

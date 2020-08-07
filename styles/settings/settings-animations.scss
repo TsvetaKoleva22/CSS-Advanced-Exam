@@ -28,6 +28,10 @@
 
 @keyframes pulse-color {
     0% {
+        background-color: $secondary-600; 
+    }
+
+    25% {
         background-color: $secondary-800; 
     }
 
@@ -35,7 +39,11 @@
         background-color: $secondary-900;
     }
 
-    100% {
+    75% {
         background-color: $secondary-800; 
+    }
+
+    100% {
+        background-color: $secondary-600; 
     }
 }
