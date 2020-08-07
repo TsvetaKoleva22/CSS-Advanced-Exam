@@ -25,7 +25,7 @@
 }
 
 .footer__container:hover::before {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
 .footer__container h6 {
