@@ -40,10 +40,22 @@
 }
 
 .welcome-wrapper .enrollment__button-wrapper {
-  border-right: 10px dotted #44A9F8;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.welcome-wrapper .enrollment__button-wrapper::after {
+  content: '';
+  height: 114px;
+  width: 12px;
+  display: block;
+  background: url("../../../assets/transparent-dots.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .welcome-wrapper .enrollment__content-list {
