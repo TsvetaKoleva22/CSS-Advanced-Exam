@@ -6,7 +6,7 @@
     position: relative;
 
     .welcome {
-        padding: 64px 330px 104px;
+        padding: 64px 320px 104px;
 
         &__label {
             @include box-shadow(1);
@@ -102,6 +102,8 @@
 
                 &--value {
                     font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-style: normal;
                     font-size: 20px;
                     line-height: 24px;
                     color: $secondary-800;

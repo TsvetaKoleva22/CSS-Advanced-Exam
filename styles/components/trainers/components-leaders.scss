@@ -12,6 +12,10 @@
         align-self: start;
         display: flex; 
 
+        &--left {
+            padding-right: 5px;
+        }
+
         &--right {
             padding-left: 15px;
         }
@@ -23,7 +27,7 @@
     }
 
     &__info {
-        margin-left: 37px;
+        margin-left: 34px;
 
         h5 {
             color: $primary-300;

@@ -4,7 +4,7 @@
 }
 
 .welcome-wrapper .welcome {
-  padding: 64px 330px 104px;
+  padding: 64px 320px 104px;
 }
 
 .welcome-wrapper .welcome__label {
@@ -100,6 +100,8 @@
 
 .welcome-wrapper .enrollment__content-list-item .list-info--value {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   font-size: 20px;
   line-height: 24px;
   color: #FF9100;

@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.leaders__person--left {
+  padding-right: 5px;
+}
+
 .leaders__person--right {
   padding-left: 15px;
 }
@@ -21,7 +25,7 @@
 }
 
 .leaders__info {
-  margin-left: 37px;
+  margin-left: 34px;
 }
 
 .leaders__info h5 {
