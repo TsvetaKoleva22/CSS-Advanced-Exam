@@ -3,7 +3,11 @@
 
 .course-main {
     display: grid;
-    grid-template-rows: 302px 620px 260px 564px 422px 550px;
+    grid-template-rows: 302px 1fr 260px 564px 422px 550px;
+
+    @include for-tablet-landscape-up {
+        grid-template-rows: 302px 620px 260px 564px 422px 550px;     
+    };
 
     @include for-desktop-up {
         grid-template-rows: 302px 570px 230px 564px 422px 480px;     

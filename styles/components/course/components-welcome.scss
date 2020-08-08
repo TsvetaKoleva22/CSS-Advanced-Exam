@@ -31,6 +31,13 @@
 
         &__main-title {
             color: white;
+            font-size: 30px;
+            line-height: 36px;
+
+            @include for-tablet-landscape-up {
+                font-size: 36px;
+                line-height: 44px;
+            }
         }
     }
 
@@ -38,42 +45,66 @@
         @include box-shadow(1);
 
         position: absolute;
-        bottom: -55px;
-        max-width: 1290px;
+        top: 246px;
+        max-width: 90%;
         width: 100%;
-        min-height: 112px;
+        min-height: auto;
         background-color: white;
         border-radius: 12px;
 
         display: grid;
-        grid-template-columns: 200px 1fr; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 144px 1fr;
+
+        @include for-tablet-landscape-up {
+            max-width: 1290px;
+            width: 100%;
+            min-height: 112px;
+
+            grid-template-columns: 200px 1fr;   
+            grid-template-rows: 1fr;
+        }
 
         @include for-desktop-up {
             grid-template-columns: 302px 1fr; 
+            grid-template-rows: 1fr;    
         };
 
         &__button-wrapper {
             display: flex; 
             align-items: center;
             justify-content: center;
-            position: relative;
+            border-bottom: 10px dotted $grey-100;
 
-            &::after {
-                content: '';
-                height: 114px;
-                width: 12px;
-                display: block;
-                background: url('../../../assets/transparent-dots.png');
-                background-size: cover;
-                position: absolute; 
-                top: 0;
-                right: 0;
-            }
+            @include for-tablet-landscape-up {
+                border: none;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    height: 114px;
+                    width: 12px;
+                    display: block;
+                    background: url('../../../assets/transparent-dots.png');
+                    background-size: cover;
+                    position: absolute; 
+                    top: 0;
+                    right: 0;
+                }
+            }             
         }
 
         &__content-list {
-            padding-left: 63px;
+            padding: 24px;
             display: flex;
+            flex-flow: column wrap;
+            margin: 0 auto;
+
+            @include for-tablet-landscape-up {
+                padding: 0 0 0 63px;
+                flex-flow: row nowrap;
+                margin: 0;
+            }
         }
 
         &__content-list-item {
@@ -82,18 +113,29 @@
             align-items: center;
             position: relative;
 
-            &:not(:last-child)::after {
-                content: '';
-                display: block;
-                position: absolute;
-                right: 32px;
-                top: 50%;
-                transform: translateY(-50%);
-                background-color: $grey-100;
-                width: 2px;
-                height: 24px;
+            &:not(:last-child) {
+                margin-bottom: 50px;
             }
-        
+
+            @include for-tablet-landscape-up {
+                
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+
+                &:not(:last-child)::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: 32px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $grey-100;
+                    width: 2px;
+                    height: 24px;
+                }
+            }
+
             .list-info-wrapper {
                 display: flex;
                 flex-direction: column; 

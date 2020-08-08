@@ -2,7 +2,6 @@
   background-color: #565656;
   border-top: 12px solid #919191;
   color: white;
-  position: relative;
 }
 
 .footer__container {
@@ -12,6 +11,7 @@
   justify-content: space-between;
   flex-flow: column wrap;
   padding: 20px 20px 15px 20px;
+  position: relative;
 }
 
 @media (min-width: 900px) {
@@ -130,9 +130,9 @@
 }
 
 .footer__copyright {
-  width: 90%;
+  width: 100%;
   position: absolute;
-  bottom: 32px;
+  bottom: -100px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;

@@ -5,7 +5,6 @@
     background-color: $grey-700;
     border-top: 12px solid $grey-500;
     color: white;
-    position: relative;
     
     &__container {
         max-height: 100%;
@@ -14,6 +13,7 @@
         justify-content: space-between;
         flex-flow: column wrap;
         padding: 20px 20px 15px 20px;
+        position: relative;
 
         @include for-tablet-landscape-up {
             max-height: 312px;
@@ -126,9 +126,9 @@
     }
 
     &__copyright {
-        width: 90%;
+        width: 100%;
         position: absolute;
-        bottom: 32px;
+        bottom: -100px;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;

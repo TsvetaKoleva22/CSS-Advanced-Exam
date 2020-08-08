@@ -2,8 +2,12 @@
 @import '../../settings/settings-breakpoints.scss';
 
 .about-wrapper {
-    padding-top: 80px; 
+    padding-top: 520px; 
     padding-bottom: 20px;
+
+    @include for-tablet-landscape-up {
+        padding-top: 80px; 
+    };
 
     @include for-desktop-up {
         padding-top: 152px; 
@@ -14,7 +18,13 @@
 .about {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 460px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 300px;
+
+    @include for-tablet-landscape-up {
+        grid-template-columns: 1fr 460px;   
+        grid-template-rows: 1fr;
+    };
 
     @include for-desktop-up {
         grid-template-columns: 1fr 550px;
@@ -30,7 +40,12 @@
 
     &__video {
         align-self: center;
-        justify-self: end;
+        justify-self: center;
+
+        @include for-tablet-landscape-up {
+            justify-self: end;
+        };
+
         transform: translateY(-8px);
         position: relative;
         cursor: pointer;   
