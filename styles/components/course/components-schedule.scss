@@ -1,4 +1,5 @@
 @import '../../settings/settings-colors.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .schedule-wrapper {
     background-color: $secondary-400;
@@ -15,7 +16,8 @@
         height: 100%;
         display: grid;
         grid-template-columns: 736px 1fr;
-        padding: 64px 0;
+        padding-top: 64px;
+        padding-bottom: 64px;
 
         &__title {
             margin-bottom: 24px;
@@ -32,11 +34,16 @@
         }
     
         &__image {
-            align-self: end;
-            margin-left: 137px;
-            transform: translateY(-20px);
+            display: none;
+
+            @include for-desktop-up {
+                display: block;
+                align-self: end;
+                justify-self: center;
+                padding-bottom: 24px;
+                transform: translateX(40px);
+            }
         }
-    
     }
 }
 

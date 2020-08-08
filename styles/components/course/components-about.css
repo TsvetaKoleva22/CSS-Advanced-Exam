@@ -1,11 +1,35 @@
 .about-wrapper {
-  padding-top: 152px;
-  padding-bottom: 96px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .about-wrapper {
+    padding-top: 152px;
+    padding-bottom: 96px;
+  }
 }
 
 .about {
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 550px;
+  grid-template-columns: 1fr 460px;
+}
+
+@media (min-width: 1200px) {
+  .about {
+    grid-template-columns: 1fr 550px;
+  }
+}
+
+.about__info {
+  align-self: center;
+}
+
+@media (min-width: 1200px) {
+  .about__info {
+    align-self: start;
+  }
 }
 
 .about__video {

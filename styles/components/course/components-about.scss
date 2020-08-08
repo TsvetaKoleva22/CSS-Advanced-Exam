@@ -1,13 +1,32 @@
 @import '../../settings/settings-colors.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .about-wrapper {
-    padding-top: 152px; 
-    padding-bottom: 96px;
+    padding-top: 80px; 
+    padding-bottom: 20px;
+
+    @include for-desktop-up {
+        padding-top: 152px; 
+        padding-bottom: 96px;
+    };
 }
 
 .about {
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 550px;
+    grid-template-columns: 1fr 460px;
+
+    @include for-desktop-up {
+        grid-template-columns: 1fr 550px;
+    };
+
+    &__info {
+        align-self: center;
+
+        @include for-desktop-up {
+            align-self: start;
+        };
+    }
 
     &__video {
         align-self: center;

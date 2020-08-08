@@ -1,15 +1,24 @@
 @import '../../settings/settings-colors.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .basic-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     &__suitable-for {
-        padding-right: 93px;
+        padding-right: 10px;
+
+        @include for-desktop-up {
+            padding-right: 93px;
+        };
     }
 
     &__acquired-skills {
-        padding-left: 82px;
+        padding-left: 15px;
         border-left: 10px dotted $secondary-100;
+
+        @include for-desktop-up {
+            padding-left: 82px;
+        };
     }
 }

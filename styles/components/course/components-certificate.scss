@@ -4,7 +4,7 @@
 .certificate {
     height: 100%;
     display: grid;
-    grid-template-columns: 610px 1fr;
+    grid-template-columns: 1fr 440px;
     padding-top: 60px;
 
     &__info-wrapper {
@@ -15,9 +15,13 @@
         justify-content: center;
     }
 
+    &__info-content {
+        max-width: 544px;
+    }
+
     &__image-wrapper {
         align-self: start;
-        margin-left: 240px;
+        justify-self: start;
     }
 
     &__image {

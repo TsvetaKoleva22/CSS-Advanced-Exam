@@ -4,10 +4,22 @@
 }
 
 .basic-info__suitable-for {
-  padding-right: 93px;
+  padding-right: 10px;
+}
+
+@media (min-width: 1200px) {
+  .basic-info__suitable-for {
+    padding-right: 93px;
+  }
 }
 
 .basic-info__acquired-skills {
-  padding-left: 82px;
+  padding-left: 15px;
   border-left: 10px dotted #FFECB3;
+}
+
+@media (min-width: 1200px) {
+  .basic-info__acquired-skills {
+    padding-left: 82px;
+  }
 }

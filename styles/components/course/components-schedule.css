@@ -14,7 +14,8 @@
   height: 100%;
   display: grid;
   grid-template-columns: 736px 1fr;
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .schedule-wrapper .schedule__title {
@@ -32,7 +33,15 @@
 }
 
 .schedule-wrapper .schedule__image {
-  align-self: end;
-  margin-left: 137px;
-  transform: translateY(-20px);
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .schedule-wrapper .schedule__image {
+    display: block;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 24px;
+    transform: translateX(40px);
+  }
 }

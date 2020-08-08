@@ -1,4 +1,5 @@
 @import '../../settings/settings-colors.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .footer {
     background-color: $grey-700;
@@ -8,9 +9,13 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        padding: 64px 0 64px 298px;
+        padding: 64px 5px 64px 250px;
         max-height: 312px;
         position: relative;
+
+        @include for-desktop-up {
+            padding: 64px 5px 64px 298px;
+        }
 
         &::before {
             content: url('../../../assets/footer-big-icon.svg');
@@ -18,7 +23,7 @@
             height: 403px;
             display: inline-block;
             position: absolute;
-            bottom: 0; left: 0;
+            bottom: 0; left: 5px;
             transform-origin: bottom;
             transition: transform 0.5s ease-out;
         }
@@ -36,7 +41,11 @@
     }
 
     &__list {
-        max-height: 148px;
+        max-height: 180px;
+
+        @include for-desktop-up {
+            max-height: 148px;
+        }
     
         li {
             &:not(:last-child) {
@@ -59,14 +68,20 @@
     }
 
     .long-menu {
-        width: 250px; 
+        @include for-desktop-up {
+            width: 250px; 
+        }
     }
 
     &__list--long {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         align-content: space-between;
         max-height: 164px;
+
+        @include for-desktop-up {
+            flex-flow: column wrap; 
+        }
     }
     
     &__social-links {

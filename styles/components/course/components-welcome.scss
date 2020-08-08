@@ -1,12 +1,17 @@
 @import '../../settings/settings-colors.scss';
 @import '../../settings/settings-box-shadows.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .welcome-wrapper {
     background-color: $blue-400;
     position: relative;
 
     .welcome {
-        padding: 64px 320px 104px;
+        padding: 64px 150px 104px;
+
+        @include for-desktop-up {
+            padding: 64px 320px 104px; 
+        };
 
         &__label {
             @include box-shadow(1);
@@ -41,7 +46,11 @@
         border-radius: 12px;
 
         display: grid;
-        grid-template-columns: 302px 1fr; 
+        grid-template-columns: 200px 1fr; 
+
+        @include for-desktop-up {
+            grid-template-columns: 302px 1fr; 
+        };
 
         &__button-wrapper {
             display: flex; 
@@ -98,6 +107,14 @@
                     font-size: 18px;
                     line-height: 22px;
                     margin-bottom: 3px;
+
+                    @include for-tablet-portrait-up {
+                        font-size: 14px;
+                    }
+
+                    @include for-desktop-up {
+                        font-size: 18px;
+                    }
                 }
 
                 &--value {
@@ -107,6 +124,14 @@
                     font-size: 20px;
                     line-height: 24px;
                     color: $secondary-800;
+
+                    @include for-tablet-portrait-up {
+                        font-size: 16px;
+                    }
+
+                    @include for-desktop-up {
+                        font-size: 20px;
+                    }
                 }
             }
         }

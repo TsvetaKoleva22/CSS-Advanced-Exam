@@ -1,6 +1,7 @@
 @import '../../settings/settings-colors.scss';
 @import '../../settings/settings-box-shadows.scss';
 @import '../../settings/settings-animations.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .navbar-wrapper {
     @include box-shadow(2);

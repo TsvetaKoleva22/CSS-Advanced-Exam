@@ -1,7 +1,7 @@
 .certificate {
   height: 100%;
   display: grid;
-  grid-template-columns: 610px 1fr;
+  grid-template-columns: 1fr 440px;
   padding-top: 60px;
 }
 
@@ -13,9 +13,13 @@
   justify-content: center;
 }
 
+.certificate__info-content {
+  max-width: 544px;
+}
+
 .certificate__image-wrapper {
   align-self: start;
-  margin-left: 240px;
+  justify-self: start;
 }
 
 .certificate__image {
