@@ -27,7 +27,6 @@ textarea::placeholder, input::placeholder {
 }
 
 .select-wrapper select {
-  min-width: 674px;
   height: 50px;
   background-color: white;
   border: none;

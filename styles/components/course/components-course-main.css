@@ -1,6 +1,6 @@
 .course-main {
   display: grid;
-  grid-template-rows: 302px 1fr 260px 564px 422px 550px;
+  grid-template-rows: 302px 1fr 360px 564px 5px 800px;
 }
 
 @media (min-width: 900px) {

@@ -15,9 +15,13 @@
     .schedule {
         height: 100%;
         display: grid;
-        grid-template-columns: 736px 1fr;
+        grid-template-columns: 1fr;
         padding-top: 64px;
         padding-bottom: 64px;
+
+        @include for-tablet-landscape-up {
+            grid-template-columns: 736px 1fr;
+        };
 
         &__title {
             margin-bottom: 24px;
@@ -31,8 +35,24 @@
 
         &__select {
             margin-bottom: 16px;
+            width: 90%;
+
+            select {
+                min-width: 100%;
+                font-size: 12px;
+                padding: 14px 10px 14px 14px;
+            }
+
+            @include for-tablet-landscape-up {
+                min-width: 674px;
+                
+                select {
+                    min-width: 100%;
+                    font-size: 18px;
+                }
+            };
         }
-    
+
         &__image {
             display: none;
 

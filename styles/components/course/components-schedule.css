@@ -13,9 +13,15 @@
 .schedule-wrapper .schedule {
   height: 100%;
   display: grid;
-  grid-template-columns: 736px 1fr;
+  grid-template-columns: 1fr;
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+@media (min-width: 900px) {
+  .schedule-wrapper .schedule {
+    grid-template-columns: 736px 1fr;
+  }
 }
 
 .schedule-wrapper .schedule__title {
@@ -30,6 +36,23 @@
 
 .schedule-wrapper .schedule__select {
   margin-bottom: 16px;
+  width: 90%;
+}
+
+.schedule-wrapper .schedule__select select {
+  min-width: 100%;
+  font-size: 12px;
+  padding: 14px 10px 14px 14px;
+}
+
+@media (min-width: 900px) {
+  .schedule-wrapper .schedule__select {
+    min-width: 674px;
+  }
+  .schedule-wrapper .schedule__select select {
+    min-width: 100%;
+    font-size: 18px;
+  }
 }
 
 .schedule-wrapper .schedule__image {

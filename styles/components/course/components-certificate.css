@@ -1,11 +1,21 @@
-.certificate {
+.certificate-wrapper {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .certificate-wrapper {
+    display: block;
+  }
+}
+
+.certificate-wrapper .certificate {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 440px;
   padding-top: 60px;
 }
 
-.certificate__info-wrapper {
+.certificate-wrapper .certificate__info-wrapper {
   height: 100%;
   padding-bottom: 95px;
   display: flex;
@@ -13,16 +23,16 @@
   justify-content: center;
 }
 
-.certificate__info-content {
+.certificate-wrapper .certificate__info-content {
   max-width: 544px;
 }
 
-.certificate__image-wrapper {
+.certificate-wrapper .certificate__image-wrapper {
   align-self: start;
   justify-self: start;
 }
 
-.certificate__image {
+.certificate-wrapper .certificate__image {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   width: 363px;
   height: 256px;

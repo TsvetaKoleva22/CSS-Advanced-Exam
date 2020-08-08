@@ -1,6 +1,14 @@
 .basic-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media (min-width: 900px) {
+  .basic-info {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .basic-info__suitable-for {
@@ -14,8 +22,17 @@
 }
 
 .basic-info__acquired-skills {
-  padding-left: 15px;
-  border-left: 10px dotted #FFECB3;
+  padding-top: 20px;
+  border-top: 10px dotted #FFECB3;
+}
+
+@media (min-width: 900px) {
+  .basic-info__acquired-skills {
+    border-left: 10px dotted #FFECB3;
+    border-top: none;
+    padding-top: 0;
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
