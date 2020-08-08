@@ -3,7 +3,11 @@
 .o-page-wrapper {
     min-height: 100%;
     display: grid;
-    grid-template-rows: 75px 1fr 324px;
+    grid-template-rows: 75px 1fr 567px;
+
+    @include for-tablet-landscape-up {
+        grid-template-rows: 75px 1fr 324px;
+    }
 }
 
 .o-site-container {
@@ -18,10 +22,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    // @include for-phone-only {
-    //     flex-direction: column;
-    // }
 }
 
 .o-vertical-centered {

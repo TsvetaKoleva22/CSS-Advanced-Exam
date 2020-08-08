@@ -2,14 +2,34 @@
   background-color: #565656;
   border-top: 12px solid #919191;
   color: white;
+  position: relative;
 }
 
 .footer__container {
+  max-height: 100%;
+  max-width: 450px;
   display: flex;
   justify-content: space-between;
-  padding: 64px 5px 64px 250px;
-  max-height: 312px;
-  position: relative;
+  flex-flow: column wrap;
+  padding: 20px 20px 15px 20px;
+}
+
+@media (min-width: 900px) {
+  .footer__container {
+    max-height: 312px;
+    max-width: 1300px;
+    flex-flow: row nowrap;
+    padding: 64px 5px 64px 250px;
+  }
+  .footer__container::before {
+    content: url("../../../assets/footer-big-icon.svg");
+    width: 220px;
+    height: 403px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -18,31 +38,18 @@
   }
 }
 
-.footer__container::before {
-  content: url("../../../assets/footer-big-icon.svg");
-  width: 220px;
-  height: 403px;
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  transform-origin: bottom;
-  transition: transform 0.5s ease-out;
-}
-
-.footer__container:hover::before {
-  transform: scale(1.04);
-}
-
 .footer__container h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   margin-bottom: 16px;
   color: white;
+  margin-top: 32px;
 }
 
-.footer__list {
-  max-height: 180px;
+@media (min-width: 900px) {
+  .footer__container h6 {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -78,12 +85,12 @@
   display: flex;
   flex-flow: column nowrap;
   align-content: space-between;
-  max-height: 164px;
 }
 
 @media (min-width: 1200px) {
   .footer__list--long {
     flex-flow: column wrap;
+    max-height: 164px;
   }
 }
 
@@ -122,8 +129,30 @@
   background-image: url("../../../assets/instagram-green.svg");
 }
 
+.footer__copyright {
+  width: 90%;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px solid #696969;
+}
+
 .footer__copyright p {
   line-height: 19px;
   color: #919191;
   margin-bottom: 0;
+}
+
+@media (min-width: 900px) {
+  .footer__copyright {
+    width: auto;
+    position: static;
+    transform: translateX(0);
+    text-align: left;
+    padding-top: 0;
+    border-top: none;
+  }
 }

@@ -5,31 +5,34 @@
     background-color: $grey-700;
     border-top: 12px solid $grey-500;
     color: white;
+    position: relative;
     
     &__container {
+        max-height: 100%;
+        max-width: 450px;
         display: flex;
         justify-content: space-between;
-        padding: 64px 5px 64px 250px;
-        max-height: 312px;
-        position: relative;
+        flex-flow: column wrap;
+        padding: 20px 20px 15px 20px;
+
+        @include for-tablet-landscape-up {
+            max-height: 312px;
+            max-width: 1300px;
+            flex-flow: row nowrap;
+            padding: 64px 5px 64px 250px;
+
+            &::before {
+                content: url('../../../assets/footer-big-icon.svg');
+                width: 220px;
+                height: 403px;
+                display: inline-block;
+                position: absolute;
+                bottom: 0; left: 5px;
+            }
+        }
 
         @include for-desktop-up {
             padding: 64px 5px 64px 298px;
-        }
-
-        &::before {
-            content: url('../../../assets/footer-big-icon.svg');
-            width: 220px;
-            height: 403px;
-            display: inline-block;
-            position: absolute;
-            bottom: 0; left: 5px;
-            transform-origin: bottom;
-            transition: transform 0.5s ease-out;
-        }
-
-        &:hover::before {
-            transform: scale(1.04);
         }
 
         h6 {
@@ -37,12 +40,15 @@
             font-weight: 600;
             margin-bottom: 16px;
             color: white;
-        }
+            margin-top: 32px;
+
+            @include for-tablet-landscape-up {
+                margin-top: 0;
+            }
+        }        
     }
 
     &__list {
-        max-height: 180px;
-
         @include for-desktop-up {
             max-height: 148px;
         }
@@ -77,10 +83,10 @@
         display: flex;
         flex-flow: column nowrap;
         align-content: space-between;
-        max-height: 164px;
 
         @include for-desktop-up {
             flex-flow: column wrap; 
+            max-height: 164px;
         }
     }
     
@@ -120,10 +126,28 @@
     }
 
     &__copyright {
+        width: 90%;
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding-top: 32px;
+        border-top: 1px solid $grey-600;
+
         p {
             line-height: 19px;
             color: $grey-500;
             margin-bottom: 0;
+        }
+
+        @include for-tablet-landscape-up {
+            width: auto;
+            position: static;
+            transform: translateX(0);
+            text-align: left;
+            padding-top: 0;
+            border-top: none;
         }
     }
 }

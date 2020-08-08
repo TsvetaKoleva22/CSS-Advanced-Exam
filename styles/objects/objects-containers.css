@@ -1,7 +1,13 @@
 .o-page-wrapper {
   min-height: 100%;
   display: grid;
-  grid-template-rows: 75px 1fr 324px;
+  grid-template-rows: 75px 1fr 567px;
+}
+
+@media (min-width: 900px) {
+  .o-page-wrapper {
+    grid-template-rows: 75px 1fr 324px;
+  }
 }
 
 .o-site-container {

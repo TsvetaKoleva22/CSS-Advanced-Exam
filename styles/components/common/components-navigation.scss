@@ -4,18 +4,28 @@
 @import '../../settings/settings-breakpoints.scss';
 
 .navbar-wrapper {
+    height: 100%;
     @include box-shadow(2);
     
     position: relative;
     z-index: 2;
 
     .navbar {
+        height: 100%;
+
         &__logo-arrow {
             margin-right: 16px;
         }
     
         &__items {
-            margin-right: 8px;
+            display: none;
+
+            @include for-tablet-landscape-up {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 8px;
+            }
         }
     
         @for $i from 0 through 7 {
@@ -47,13 +57,25 @@
                 }
             }
         }
-        
-        &__btns {
-            img {
-                margin-right: 32px;
-                cursor: pointer;
-            }
-    
+    }
+
+    .search-icon {
+        display: none;
+
+        @include for-tablet-landscape-up {
+            display: block;
+            margin-right: 32px;
+            cursor: pointer;
+        }
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-right: 23px;
+        margin-left: 24px;
+
+        @include for-tablet-landscape-up {
+            display: none;
         }
     }
 }
