@@ -1,14 +1,32 @@
 .leaders {
   height: 100%;
-  padding-top: 96px;
+  padding-top: 20px;
   border-bottom: 10px dotted #DFF4F1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media (min-width: 1200px) {
+  .leaders {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 96px;
+  }
 }
 
 .leaders__person {
   align-self: start;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .leaders__person {
+    flex-direction: row;
+    align-items: normal;
+  }
 }
 
 .leaders__person--left {
@@ -25,7 +43,14 @@
 }
 
 .leaders__info {
-  margin-left: 34px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .leaders__info {
+    margin-left: 34px;
+    text-align: left;
+  }
 }
 
 .leaders__info h5 {

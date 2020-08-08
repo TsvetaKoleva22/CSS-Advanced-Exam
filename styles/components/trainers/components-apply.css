@@ -13,6 +13,14 @@
 
 .apply-wrapper .apply__title {
   color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media (min-width: 900px) {
+  .apply-wrapper .apply__title {
+    font-size: 36px;
+  }
 }
 
 .apply-wrapper .apply__info {
@@ -25,20 +33,41 @@
 
 .apply-wrapper .apply__form {
   align-self: stretch;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .apply-wrapper .apply__form {
+    display: block;
+  }
 }
 
 .apply-wrapper .apply__form-input {
-  width: 228px;
+  width: 335px;
+  margin-bottom: 36px;
   border: 1px solid white;
   color: white;
   background-color: #66B9F8;
-  margin-right: 29px;
+}
+
+@media (min-width: 1200px) {
+  .apply-wrapper .apply__form-input {
+    width: 228px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1285px) {
+  .apply-wrapper .apply__form-input {
+    margin-right: 29px;
+  }
+  .apply-wrapper .apply__form-input--last {
+    margin-right: 44px;
+  }
 }
 
 .apply-wrapper .apply__form-input::placeholder {
   color: white;
-}
-
-.apply-wrapper .apply__form-input--last {
-  margin-right: 44px;
 }

@@ -21,6 +21,24 @@
   }
 }
 
+@keyframes pulse-color {
+  0% {
+    background-color: #FFB402;
+  }
+  25% {
+    background-color: #FF9100;
+  }
+  50% {
+    background-color: #FF7100;
+  }
+  75% {
+    background-color: #FF9100;
+  }
+  100% {
+    background-color: #FFB402;
+  }
+}
+
 .intro-wrapper {
   background-color: #FFB402;
 }

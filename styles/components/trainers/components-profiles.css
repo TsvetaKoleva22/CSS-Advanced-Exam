@@ -2,12 +2,44 @@
   height: 100%;
   padding: 96px 94px 65px 104px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+@media (min-width: 900px) {
+  .profiles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profiles {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .profiles .profile {
   position: relative;
+}
+
+.profiles .profile--desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .profiles .profile--desktop {
+    display: flex;
+  }
+}
+
+.profiles .profile--tablet {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .profiles .profile--tablet {
+    display: flex;
+  }
 }
 
 .profiles .profile__image-wrapper {

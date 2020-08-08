@@ -1,5 +1,6 @@
 @import '../../settings/settings-colors.scss';
 @import '../../settings/settings-box-shadows.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .apply-wrapper {
     border-top: 12px solid $blue-200;
@@ -14,6 +15,12 @@
 
         &__title {
             color: white;
+            text-align: center;
+            font-size: 30px;
+
+            @include for-tablet-landscape-up {
+                font-size: 36px;    
+            }
         }
 
         &__info {
@@ -26,21 +33,38 @@
 
         &__form {
             align-self: stretch;
+            display: flex; 
+            flex-flow: column;
+            align-items: center;
+
+            @include for-desktop-up {
+                display: block;
+            };
         }
 
         &__form-input {
-            width: 228px;
+            width: 335px;
+            margin-bottom: 36px;
+
+            @include for-desktop-up {
+                width: 228px;
+                margin-bottom: 0;
+            };
+
+            @media (min-width: 1285px) {
+                margin-right: 29px;
+
+                &--last {
+                    margin-right: 44px;
+                }
+            }
+
             border: 1px solid white;
             color: white;
             background-color: $blue-300;
-            margin-right: 29px;
 
             &::placeholder {
                 color: white;
-            }
-
-            &--last {
-                margin-right: 44px;
             }
         }
     }

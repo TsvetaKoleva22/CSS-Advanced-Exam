@@ -1,4 +1,14 @@
+@import '../../settings/settings-breakpoints.scss';
+
 .trainers-main {
     display: grid;
-    grid-template-rows: 256px 556px 1472px 412px;
+    grid-template-rows: 256px 1fr 1472px 700px;//to be modified!!!
+
+    @include for-tablet-landscape-up {
+        grid-template-rows: 256px 1fr 1472px 700px;     
+    };
+
+    @include for-desktop-up {
+        grid-template-rows: 256px 556px 1472px 412px;    
+    };
 }

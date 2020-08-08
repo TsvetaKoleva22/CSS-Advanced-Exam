@@ -1,16 +1,31 @@
 @import '../../settings/settings-colors.scss';
 @import '../../settings/settings-box-shadows.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .leaders {
     height: 100%;
-    padding-top: 96px;
+    padding-top: 20px;
     border-bottom: 10px dotted $primary-50;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    @include for-desktop-up {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 96px;
+    };
 
     &__person {
         align-self: start;
         display: flex; 
+        flex-direction: column;
+        align-items: center;
+
+        @include for-tablet-landscape-up {
+            flex-direction: row;    
+            align-items: normal;
+        }
 
         &--left {
             padding-right: 5px;
@@ -27,7 +42,12 @@
     }
 
     &__info {
-        margin-left: 34px;
+        text-align: center;
+
+        @include for-tablet-landscape-up {
+            margin-left: 34px;
+            text-align: left;
+        }
 
         h5 {
             color: $primary-300;

@@ -1,4 +1,16 @@
 .trainers-main {
   display: grid;
-  grid-template-rows: 256px 556px 1472px 412px;
+  grid-template-rows: 256px 1fr 1472px 700px;
+}
+
+@media (min-width: 900px) {
+  .trainers-main {
+    grid-template-rows: 256px 1fr 1472px 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .trainers-main {
+    grid-template-rows: 256px 556px 1472px 412px;
+  }
 }
