@@ -9,16 +9,28 @@
 }
 
 .contact-form__form {
-  width: 850px;
+  width: 80%;
+}
+
+@media (min-width: 1200px) {
+  .contact-form__form {
+    width: 850px;
+  }
 }
 
 .contact-form__input {
-  width: 409px;
+  width: 48%;
   border: 1px solid #919191;
 }
 
 .contact-form__input::placeholder {
   color: #919191;
+}
+
+@media (min-width: 1200px) {
+  .contact-form__input {
+    width: 409px;
+  }
 }
 
 .contact-form__textarea {

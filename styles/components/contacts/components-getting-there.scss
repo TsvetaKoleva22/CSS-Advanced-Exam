@@ -1,28 +1,52 @@
 @import '../../settings/settings-colors.scss';
 @import '../../settings/settings-box-shadows.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .getting-there-wrapper {
     background-color: $secondary-50;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include for-desktop-up {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
 
     .getting-there {
         height: 100%;    
         display: grid;
-        grid-template-rows: 84px 1fr;
-        grid-template-columns: 407px 407px 407px;
-        grid-column-gap: 33px; 
+        grid-template-rows: 50px 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        @include for-desktop-up {
+            grid-template-rows: 84px 1fr;
+            grid-template-columns: 407px 407px 407px;
+            grid-column-gap: 33px; 
+        }
 
         &__title {
             color: $primary-300;
 
             &--main {
-                grid-column: 1 / 4;
                 justify-self: center;
+
+                @include for-desktop-up {
+                    grid-column: 1 / 4;
+                }
             }
 
             &--secondary {
                 margin-bottom: 18px;
+            }
+        }
+
+        &__article {
+            justify-self: center;
+            text-align: center;
+
+            @include for-desktop-up {
+                justify-self: stretch;
+                text-align: left;
             }
         }
 

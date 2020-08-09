@@ -1,5 +1,6 @@
 @import '../../settings/settings-colors.scss';
 @import '../../settings/settings-box-shadows.scss';
+@import '../../settings/settings-breakpoints.scss';
 
 .contact-form {
     height: 100%;
@@ -11,15 +12,23 @@
     }
 
     &__form {
-        width: 850px;
+        width: 80%;
+
+        @include for-desktop-up {
+            width: 850px;
+        }
     }
 
     &__input {
-        width: 409px;
+        width: 48%;
         border: 1px solid $grey-500;
 
         &::placeholder {
             color: $grey-500;
+        }
+
+        @include for-desktop-up {
+            width: 409px;
         }
     }
 

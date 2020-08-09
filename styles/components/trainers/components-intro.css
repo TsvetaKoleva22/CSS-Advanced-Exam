@@ -59,6 +59,6 @@
   margin-bottom: 0;
   opacity: 0;
   animation-name: text-fade-in;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
